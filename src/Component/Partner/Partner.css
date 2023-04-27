@@ -1,0 +1,15 @@
+.partnerDiv img {
+    width: 135px !important;
+    height: 135px !important;
+    background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.partnerDiv h5 {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--textColor);
+    font-size: 19px;
+    font-weight: 300;
+}
