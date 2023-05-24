@@ -21,6 +21,8 @@ import user3 from "./../../Images/user3.jpeg";
 import user4 from "./../../Images/user4.jpeg";
 import user5 from "./../../Images/user5.jpeg";
 import user6 from "./../../Images/user6.jpeg";
+import user7 from "./../../Images/user7.jpg";
+import user8 from "./../../Images/user8.jpg";
 import ScrollToTop from '../../Component/ScrollToTop/ScrollToTop';
 import Roadmap from '../../Component/Roadmap/Roadmap';
 import RoadmapNew from '../../Component/RoadmapNew/RoadmapNew';
@@ -70,12 +72,12 @@ const HomePage = () => {
             {console.log(width)}
             <ScrollToTop />
             {
-                width > 767 ?<video id="background-video" loop autoPlay muted>
-                <source src={BgVideo1} type="video/mp4" />
-            </video>:
-            <video id="background-video" loop autoPlay muted>
-                <source src={MobileBgVideo} type="video/mp4" />
-            </video>
+                width > 767 ? <video id="background-video" loop autoPlay muted>
+                    <source src={BgVideo1} type="video/mp4" />
+                </video> :
+                    <video id="background-video" loop autoPlay muted>
+                        <source src={MobileBgVideo} type="video/mp4" />
+                    </video>
             }
             <section>
                 <div className="headerDiv">
@@ -86,7 +88,7 @@ const HomePage = () => {
                         <div className="headerContent">
                             <h1>Welcome To <br className='hdbr' /><span style={{ color: "#2ae6f5" }}>Meta F World</span></h1>
                             <p>Create, explore and trade in the first-ever virtual world owned by its users.</p>
-                            
+
                         </div>
                     </Container>
                 </div>
@@ -253,31 +255,41 @@ const HomePage = () => {
                             img={user1}
                             name="Gourav Rana"
                             about="Co Founder"
+                            instagram="https://instagram.com/gaurav_pratap_rana?igshid=YmMyMTA2M2Y="
+                            linkedin="https://www.linkedin.com/in/gaurav-pratap-804b51129"
+                            twitter="https://twitter.com/gauravrana859?s=11&t=W3PCyw9XAp6ebC3MWaaUpw"
+                            telegram="https://t.me/GGaurav0933"
+                            facebook=""
                         /></div>
                         <div><TeamMember
                             img={user2}
                             name="Ram Sharan"
                             about="Co Founder"
+                            facebook="https://www.facebook.com/raam.sharma.12?mibextid=LQQJ4d"
+                            linkedin="https://www.linkedin.com/in/ram-bhardwaj-1882b0221"
+                            twitter="https://twitter.com/RamsaranBhardwj"
+                            telegram="https://t.me/RamBhardwaj1"
+                            instagram=""
                         /></div>
                         <div><TeamMember
-                            img={user3}
-                            name="Anoush Zohrabi"
+                            img={user7}
+                            name="Shivam goyal"
                             about="Founding Engineer"
+                            instagram="https://instagram.com/shivam_goyal_0?igshid=MTIyMzRjYmRlZg=="
+                            linkedin="https://www.linkedin.com/in/shivam-goyal-28bba1275"
+                            twitter="https://twitter.com/Shivam_goyal_0?t=mGTGt-8rCxUYhoWHUKy3CQ&s=09"
+                            telegram="http://t.me/shivam_goyal_0"
+                            facebook=""
                         /></div>
                         <div><TeamMember
-                            img={user4}
-                            name="Dan Kaul"
-                            about="Product designer"
-                        /></div>
-                        <div><TeamMember
-                            img={user5}
-                            name="Jang-mi Bong-Cha"
-                            about='Project Manager'
-                        /></div>
-                        <div><TeamMember
-                            img={user6}
-                            name="Jennifer Booker"
-                            about='Head of Finance'
+                            img={user8}
+                            name="Dinesh Mehta"
+                            about="Product Manager"
+                            instagram="https://instagram.com/dinesh_k.k.r?igshid=ZDdkNTZiNTM="
+                            linkedin="https://www.linkedin.com/in/daksh-finance-2a503316b"
+                            facebook="https://www.facebook.com/dineshmehta414?mibextid=ZbWKwL"
+                            telegram="https://t.me/Dn414"
+                            twitter=""
                         /></div>
                     </OwlCarousel>
 
@@ -354,7 +366,7 @@ const HomePage = () => {
             <section className='contactus' id="contact">
                 <Container>
                     <Row>
-                        <Col md="6" >
+                        <Col md="12" >
                             <div className="textImage contactText">
                                 <h2 data-aos="fade-right" data-aos-delay="100">CONTACT US</h2>
                                 <h1 data-aos="fade-right" data-aos-delay="300">Are you looking to partner with Meta F World?</h1>
@@ -362,7 +374,7 @@ const HomePage = () => {
                                 <h5 data-aos="fade-right" data-aos-delay="500"><i><MdOutlineEmail /></i> info.metaf@gmail.com</h5>
                             </div>
                         </Col>
-                        <Col md="6">
+                        {/* <Col md="6">
                             <div className="contactusForm">
                                 <Row>
                                     <Col sm="6">
@@ -394,7 +406,7 @@ const HomePage = () => {
                                 </div>
                                 <button className="sendBtn">Send</button>
                             </div>
-                        </Col>
+                        </Col> */}
                     </Row>
                 </Container>
             </section>

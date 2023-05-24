@@ -203,6 +203,7 @@
 
 .contactText {
     margin-top: 30px !important;
+    text-align: center;
 }
 
 .contactText h1 {
@@ -215,6 +216,8 @@
 
 .contactText p {
     font-size: 17px !important;
+    width: 70%;
+    margin: auto;
 }
 
 .contactus {
@@ -327,6 +330,10 @@
 }
 
 @media (max-width: 768px) {
+    .contactText p {
+        width: 95%;
+    }
+
     .partnerh1 {
         margin-top: 50px;
     }
